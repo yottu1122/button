@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in posts %}
   <url>
-    <loc>{{ post.permalink | uriencode }}</loc>
+    <loc>{{"https://yottu1122.github.io/button/"}}</loc>
     {% if post.updated %}
     <lastmod>{{ post.updated | formatDate }}</lastmod>
     {% elif post.date %}
