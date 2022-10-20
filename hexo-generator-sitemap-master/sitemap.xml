@@ -4,16 +4,16 @@
   <url>
     <loc>https://yottu1122.github.io/button/</loc>
     {% if post.updated %}
-    <lastmod>{{ post.updated | formatDate }}</lastmod>
+    <lastmod>2022-10-20</lastmod>
     {% elif post.date %}
     <lastmod>{{ post.date | formatDate }}</lastmod>
     {% endif %}
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   {% endfor %}
 
-  <url>
+  <!-- <url>
     <loc>{{ config.url | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
@@ -36,5 +36,5 @@
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
-  {% endfor %}
+  {% endfor %} -->
 </urlset>
